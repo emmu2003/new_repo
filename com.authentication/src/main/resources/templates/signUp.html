@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Welcome page</title>
+	
+	
+	<style type="text/css">
+	
+	/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Sign-up container */
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+/* Header styling */
+h2 {
+    text-align: left;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Label and input styling */
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Gender input styling */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.gender-options {
+    margin-bottom: 20px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Spacing between sections */
+br {
+    margin-bottom: 15px;
+}
+	
+	
+	</style>
+	
+	
+	</head>
+	<body>
+		<h2>Welcome to Sign Up page</h2>
+			
+			<form action="/signUp" method ="post">
+			<label>USERNAME</label>
+			<input type= "text" name="username">
+			<br><br>
+			
+			<label>EMAIL</label>
+			<input type= "email" name="email">
+			<br><br>
+			
+			<label>PASSWORD</label>
+			<input type= "password" name="password">
+			<br><br>
+			
+			<label>GENDER</label>
+			<input type= "radio" name="gender" value="male">male
+			<input type= "radio" name="gender" value="female">female
+			<input type= "radio" name="gender" value="other">other
+			<br><br>
+			
+			
+			<input type ="submit" value="SIGNUP">
+			
+			
+			</form>
+		
+	</body>
+</html>

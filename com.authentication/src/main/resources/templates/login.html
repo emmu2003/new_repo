@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Welcome page</title>
+	<style type="text/css">
+	
+	/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    text-align: left;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Container for the login form */
+.login-container {
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form inputs */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Link styling */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+	
+	
+	
+	</style>
+	</head>
+	<body>
+		<h2>Welcome to Login page</h2>
+		
+		<form action="/login" method="POST">
+		<label>USERNAME</label>
+			<input type= "text" name="username">
+			<br><br>
+			
+			<label>PASSWORD</label>
+			<input type= "password" name="password">
+			<br><br>
+			
+			<input type ="submit" value="LOGIN">
+			
+		</form>
+		
+		<a href="">forgot password?</a>
+	</body>
+</html>
